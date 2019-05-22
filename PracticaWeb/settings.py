@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,7 @@ SECRET_KEY = '%(n642-d7d11$fy^l3jkmofjmq+-g*$h6nw3=(lrj%j10f&7um'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0', 'herokuapp.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -47,7 +48,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+
+django_heroku.settings(locals())
 
 ROOT_URLCONF = 'PracticaWeb.urls'
 
@@ -75,8 +79,14 @@ WSGI_APPLICATION = 'PracticaWeb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'sd2019-forkilla',
+        'USER': 'user',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+        'CONN_MAX_AGE': 500
+
     }
 }
 
@@ -126,7 +136,28 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
-# STATICFILES_DIRS = (os.path.join(BASE_DIR+'/forkilla/', 'static'),)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media_cdn")
+
+MEDIA_URL = '/media/'
 
 # STATIC_ROOT = os.path.join(BASE_DIR+'/forkilla/', 'staticfiles')
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'sd2019-forkilla',
+        'USER': 'user',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+        'CONN_MAX_AGE': 500
+
+    }
+}
