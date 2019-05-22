@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <title>Title</title>
+</head>
+<body>
+
+<div class="page-header">
+    <div class="col1">
+        <a href="http://localhost:8000/forkilla/restaurants/"><img alt="ForkillaHome" src="{% static '/Images/tenedor.png' %}"></a>
+    </div>
+    <div class="col2">
+        <form action="{% url 'restaurants'%}" method="get">
+           <input type="search" id="searchrest" placeholder="Busca" name="searching">
+            <button type="submit" > Buscar</button>
+        </form>
+    </div>
+    <div class="col3">
+        {% if user.is_authenticated %}
+                <h3>Hola</h3> <p>{{ user.get_username }} </p>
+                <form action="{% url 'logout' %}" method="get">
+                    <button>Logout</button>
+                </form>
+                <form action="{% url 'reservationlist' user.username %}" method="get">
+                    <button>Reserves</button>
+                </form>
+        {% else %}
+                <form action="{% url 'login' %}" method="get">
+                    <button>Login</button>
+                </form>
+                <form action="{% url 'register' %}" method="get">
+                    <button>Register</button>
+                </form>
+
+        {% endif %}
+    </div>
+
+</div>
+<div class="last-viewed">
+    Your last viewed Restaurants
+    <form action="{% url 'reservation'%}" method="get">
+        {% csrf_token %}
+
+        {% for restaurant in viewedrestaurants.restaurant.all|slice:":5:-1"%}
+            <a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> : {{restaurant.menu_description}}
+            <button type="submit" name="reservation" value={{restaurant.restaurant_number}}> Reserva</button>
+        {% endfor %}
+    </form>
+<div>
+    {% block content %}
+    
+    {% endblock %}
+</body>
+</html>
