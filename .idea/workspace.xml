@@ -24,14 +24,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PracticaWeb/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="136" column="25" lean-forward="true" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="130" column="53" selection-start-line="130" selection-start-column="53" selection-end-line="130" selection-end-column="53" />
               <folding>
                 <element signature="e#316#325#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forkilla/static/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -60,6 +69,7 @@
       <list>
         <option value="$PROJECT_DIR$/forkilla/views.py" />
         <option value="$PROJECT_DIR$/PracticaWeb/settings.py" />
+        <option value="$PROJECT_DIR$/forkilla/static/style.css" />
       </list>
     </option>
   </component>
@@ -94,6 +104,12 @@
               <item name="sd2019-forkillaa9" type="b2602c69:ProjectViewProjectNode" />
               <item name="sd2019-forkillaa9" type="462c0819:PsiDirectoryNode" />
               <item name="forkilla" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sd2019-forkillaa9" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sd2019-forkillaa9" type="462c0819:PsiDirectoryNode" />
+              <item name="forkilla" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sd2019-forkillaa9" type="b2602c69:ProjectViewProjectNode" />
@@ -180,23 +196,23 @@
       <option name="presentableId" value="Default" />
       <updated>1558548387584</updated>
       <workItem from="1558548389197" duration="3132000" />
-      <workItem from="1558708491724" duration="10378000" />
+      <workItem from="1558708491724" duration="11781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13510000" />
+    <option name="totallyTimeSpent" value="14913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25375536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25375536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32996634" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -274,11 +290,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PracticaWeb/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="136" column="25" lean-forward="true" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="130" column="53" selection-start-line="130" selection-start-column="53" selection-end-line="130" selection-end-column="53" />
           <folding>
             <element signature="e#316#325#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forkilla/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
         </state>
       </provider>
     </entry>

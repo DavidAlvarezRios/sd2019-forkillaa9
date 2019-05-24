@@ -27,7 +27,7 @@ SECRET_KEY = '%(n642-d7d11$fy^l3jkmofjmq+-g*$h6nw3=(lrj%j10f&7um'
 DEBUG = False
 #DEBUG_PROPAGATE_EXCEPTIONS = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0', '.herokuapp.com', '*']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0', '.herokuapp.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -64,7 +64,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                # 'django.django_heroku.settings(locals())template.context_processors.djangorestframeworkdebug',
+                #'django.django_heroku.settings(locals())template.context_processors.djangorestframeworkdebug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -123,13 +123,12 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_L10N = True
-
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'forkilla/staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'forkilla/static')
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
@@ -137,12 +136,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'forkilla/static'),
 )
 
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media_cdn")
 
 MEDIA_URL = '/media/'
 
 #STATIC_ROOT = os.path.join(BASE_DIR+'/forkilla/', 'static')
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
