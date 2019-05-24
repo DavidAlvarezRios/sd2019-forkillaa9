@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-django_heroku.settings(locals())
+
 
 ROOT_URLCONF = 'PracticaWeb.urls'
 
@@ -63,7 +63,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                # 'django.template.context_processors.djangorestframeworkdebug',
+                # 'django.django_heroku.settings(locals())template.context_processors.djangorestframeworkdebug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -137,9 +137,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+#STATICFILES_DIRS = (   os.path.join(BASE_DIR, 'static'),)
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -148,16 +146,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media_cdn")
 MEDIA_URL = '/media/'
 
 # STATIC_ROOT = os.path.join(BASE_DIR+'/forkilla/', 'staticfiles')
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sd2019-forkilla',
-        'USER': 'user',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
-        'CONN_MAX_AGE': 500
-
-    }
-}
+django_heroku.settings(locals())
