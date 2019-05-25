@@ -23,8 +23,6 @@ from forkilla import views
 
 router = routers.DefaultRouter()
 router.register(r'restaurants', views.RestaurantViewSet, basename='restaurants')
-#router.register(r'restaurants/restaurant_number', views.RestaurantViewSet, 'Restaurant_number')
-
 
 urlpatterns = [
     url(r'^forkilla/', include('forkilla.urls')),

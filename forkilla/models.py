@@ -68,8 +68,8 @@ class Reservation(models.Model):
     )
     _d_slots = dict(SLOTS)
     id = models.AutoField(primary_key=True)
-    user = models.ForeignKey(User)
-    restaurant = models.ForeignKey(Restaurant)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     day = models.DateField(default=datetime.now)
     time_slot = models.CharField(max_length=15, choices=SLOTS)
     num_people = models.PositiveIntegerField(default=1, validators=[MinValueValidator(0)])
@@ -85,7 +85,7 @@ class ViewedRestaurants(models.Model):
 
 class Review(models.Model):
     id = models.AutoField(primary_key=True)
-    restaurant = models.ForeignKey(Restaurant)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     #user = models.ForeignKey(User)
     review_message = models.CharField(max_length=500)
     # stars = IntegerRangeField(min_value=0, max_value=5)
