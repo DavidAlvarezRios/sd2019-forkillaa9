@@ -66,31 +66,34 @@ def handler500(request):
 
 
 def restaurants(request, city="", category=""):
-    promoted = False
+    try:
+        promoted = False
 
-    if city and category:
-        restaurants_by_city = Restaurant.objects.filter(city__iexact=city, category__iexact=category)
-    elif city:
-        restaurants_by_city = Restaurant.objects.filter(city__iexact=city)
+        if city and category:
+            restaurants_by_city = Restaurant.objects.filter(city__iexact=city, category__iexact=category)
+        elif city:
+            restaurants_by_city = Restaurant.objects.filter(city__iexact=city)
 
-    else:
+        else:
 
-        restaurants_by_city = Restaurant.objects.filter(is_promot="True")
-        promoted = True
-    if request.GET:
-        restaurants_by_city = Restaurant.objects.filter(city__iexact=request.GET['searching'])
+            restaurants_by_city = Restaurant.objects.filter(is_promot="True")
+            promoted = True
+        if request.GET:
+            restaurants_by_city = Restaurant.objects.filter(city__iexact=request.GET['searching'])
 
-    viewedrestaurants = _check_session(request)
+        viewedrestaurants = _check_session(request)
 
-    context = {
-        'city': city,
-        'category': category,
-        'restaurants': restaurants_by_city,
-        'promoted': promoted,
-        'user': request.user,
-        'viewedrestaurants': viewedrestaurants
-    }
-    return render(request, 'forkilla/restaurants.html', context)
+        context = {
+            'city': city,
+            'category': category,
+            'restaurants': restaurants_by_city,
+            'promoted': promoted,
+            'user': request.user,
+            'viewedrestaurants': viewedrestaurants
+        }
+        return render(request, 'forkilla/restaurants.html', context)
+    except Exception as ex:
+        return HttpResponse(ex)
 
 
 def details_view(request, restaurant_number=""):
