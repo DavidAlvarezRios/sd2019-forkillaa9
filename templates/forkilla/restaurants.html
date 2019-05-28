@@ -11,13 +11,13 @@
         {% if city and category %}
 
             <ul class="breadcrumb">reservation
-                <li><a href="http://localhost:8000/forkilla/restaurants/">Home</a></li>
-                <li><a href="http://localhost:8000/forkilla/restaurants/{{ city }}">{{ city }}</a></li>
+                <li><a href="https://localhost:8000/forkilla/restaurants/">Home</a></li>
+                <li><a href="https://localhost:8000/forkilla/restaurants/{{ city }}">{{ city }}</a></li>
                 <li>{{ category }}</li>
             </ul>
         {% elif city %}
             <ul class="breadcrumb">
-                <li><a href="http://localhost:8000/forkilla/restaurants/">Home</a></li>
+                <li><a href="https://localhost:8000/forkilla/restaurants/">Home</a></li>
                 <li>{{ city }}</li>
             </ul>
         {% endif %}
