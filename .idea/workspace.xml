@@ -79,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/templates/forkilla/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+              <caret line="12" column="127" selection-start-line="12" selection-start-column="127" selection-end-line="12" selection-end-column="127" />
             </state>
           </provider>
         </entry>
@@ -242,7 +242,7 @@
       <workItem from="1558708491724" duration="12539000" />
       <workItem from="1558789641542" duration="14764000" />
       <workItem from="1559067366372" duration="1098000" />
-      <workItem from="1559068535598" duration="10618000" />
+      <workItem from="1559068535598" duration="10942000" />
     </task>
     <task id="LOCAL-00001" summary="funciona en local">
       <created>1559075262473</created>
@@ -262,7 +262,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42151000" />
+    <option name="totallyTimeSpent" value="42475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
@@ -460,7 +460,7 @@
     <entry file="file://$PROJECT_DIR$/templates/forkilla/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+          <caret line="12" column="127" selection-start-line="12" selection-start-column="127" selection-end-line="12" selection-end-column="127" />
         </state>
       </provider>
     </entry>
