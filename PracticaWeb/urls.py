@@ -13,11 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+import django
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.contrib.auth.views import login, logout
 
 from rest_framework import routers
+
+from PracticaWeb import settings
 from forkilla import views
 
 
@@ -31,7 +34,8 @@ urlpatterns = [
     url(r'^accounts/login/$', login, name='login'),
     url(r'^accounts/logout/$', logout, {'next_page': '/forkilla/restaurants/'}, name='logout'),
     url(r'^api/', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^static/(?P<path>.*)$', django.views.static.serve, {'document_root': settings.STATIC_ROOT, 'show_indexes': settings.DEBUG}),
 ]
 
 handler404 = views.handler404
