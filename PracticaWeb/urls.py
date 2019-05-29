@@ -29,7 +29,7 @@ router.register(r'restaurants', views.RestaurantViewSet, basename='restaurants')
 
 urlpatterns = [
     url(r'^forkilla/', include('forkilla.urls')),
-    #url(r'^comparator/$', views.comparator, name="comparator"),
+    url(r'^comparator/$', views.comparator, name="comparator"),
     url(r'^admin/', admin.site.urls),
     url(r'', include('forkilla.urls')),
     url(r'^accounts/login/$', login, name='login'),

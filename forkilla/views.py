@@ -35,7 +35,8 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     queryset = Restaurant.objects.all().order_by('category')
     serializer_class = RestaurantSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsCommercialOrReadOnly)
-    #lookup_field = 'restaurant_number'
+
+    # lookup_field = 'restaurant_number'
 
     def get_queryset(self):
 
@@ -63,6 +64,10 @@ def handler404(request):
 
 def handler500(request):
     return render(request, 'forkilla/500.html', status=500)
+
+
+def comparator(request):
+    return render(request, 'forkilla/comparator.html')
 
 
 def restaurants(request, city="", category=""):
