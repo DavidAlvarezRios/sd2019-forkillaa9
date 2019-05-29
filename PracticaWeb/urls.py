@@ -30,7 +30,7 @@ router.register(r'restaurants', views.RestaurantViewSet, basename='restaurants')
 urlpatterns = [
     url(r'^forkilla/', include('forkilla.urls')),
     url(r'^admin/', admin.site.urls),
-    # url(r'', include('forkilla.urls')),
+    url(r'', include('forkilla.urls')),
     url(r'^accounts/login/$', login, name='login'),
     url(r'^accounts/logout/$', logout, {'next_page': '/forkilla/restaurants/'}, name='logout'),
     url(r'^api/', include(router.urls)),
