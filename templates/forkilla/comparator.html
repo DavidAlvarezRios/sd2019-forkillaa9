@@ -1,70 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-{% extends 'forkilla/base.html' %}
+{% extends "forkilla/base.html" %}
+
 {% block content %}
-<head>
-    {% load static %}
-    <meta charset="UTF-8">
-    <title>Comparator</title>
-    <script src="{% static 'comparator/jquery-3.4.1.min.js' %}"></script>
-    <script> src="{% static 'comparator/Comparator.js' %}"</script>
-</head>
-<body>
 
-    <label for="sel2">Select a category: </label>
-    <select class="form-control" id="category_selector">
+    <head>
+        {% load static %}
+        <script src="{% static 'comparator/jquery-3.4.1.min.js' %}"></script>
+        <script src="{% static 'comparator/ConsultaWeb.js' %}"></script>
+    </head>
+    <h2>Comparator</h2>
+    <div style="margin: 10px;">
+        City: <input type="text" id="city">
+    </div>
+    <div style="margin: 10px;">
+        Category:
+        <select class="select" id="category">
+              <option value="">Others</option>
+              <option value="Fusi">Fusion</option>
+              <option value="Rice">Rice</option>
+              <option value="BBQ">Barbecue</option>
+              <option value="Chin">Chinese</option>
+              <option value="Medi">Mediterranean</option>
+              <option value="Crep">Creperie</option>
+              <option value="Hind">Hindu</option>
+              <option value="Japa">Japanese</option>
+              <option value="Ital">Italian</option>
+              <option value="Mexi">Mexican</option>
+              <option value="Peru">Peruvian</option>
+              <option value="Russ">Russian</option>
+              <option value="Turk">Turkish</option>
+              <option value="Basq">Basque</option>
+              <option value="Vegy">Vegetarian</option>
+              <option value="Afri">African</option>
+              <option value="Egyp">Egyptian</option>
+              <option value="Grek">Greek</option>
+            </select>
+    </div>
+    <div style="margin: 10px;">
+        Maximum price: <input type="text" id="price">
+    </div>
 
-            <option></option>
-
-            <option>Rice</option>
-
-            <option>Fusi</option>
-
-            <option>BBQ</option>
-
-            <option>Chin</option>
-
-            <option>Medi</option>
-
-            <option>Crep</option>
-
-            <option>Hind</option>
-
-            <option>Japa</option>
-
-            <option>Ital</option>
-
-            <option>Mexi</option>
-
-            <option>Peru</option>
-
-            <option>Russ</option>
-
-            <option>Turk</option>
-
-            <option>Basq</option>
-
-            <option>Vegy</option>
-
-            <option>Afri</option>
-
-            <option>Egyp</option>
-
-            <option>Grek</option>
-
-    </select>
-
-      <label for="inputCity">Input a City: </label>
-      <input type="text" class="form-control" id="inputCity">
-    <br>
-      <label for="inputPrice">Input a Price: </label>
-      <input type="text" class="form-control" id="inputPrice">
-    <br>
     <div id="ips" hidden="hidden"> {{ ips }}</div>
-    <button onclick="javascript:comparar()">Send Request! </button>
 
+    <button style="margin: 10px;" onclick="javascript:comparar()">GET ALL</button>
 
-
-</body>
-</html>
+    <button style="margin: 10px;" onclick="javascript:cheapest()">GET THE CHEAPEST</button>
 {% endblock %}
