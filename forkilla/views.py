@@ -66,8 +66,11 @@ def handler500(request):
     return render(request, 'forkilla/500.html', status=500)
 
 
-def comparator(request):
-    return render(request, 'forkilla/comparator.html')
+def comparator(request, ips):
+    context = {
+        'ips': ips
+    }
+    return render(request, 'forkilla/comparator.html', context)
 
 
 def restaurants(request, city="", category=""):

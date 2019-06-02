@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <title>Comparator</title>
-        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="{% static 'comparator/jquery-3.4.1.min.js' %}"></script>
         <script> src="{% static 'comparator/Comparator.js' %}"</script>
 </head>
 <body>
@@ -58,8 +58,8 @@
       <label for="inputPrice">Input a Price: </label>
       <input type="text" class="form-control" id="inputPrice">
     <br>
-    <div id="ips" hidden="hidden"> ['sd2019-f4-forkilla']</div>
-    <button class="btn btn-info btn-sm" onclick="comparar()">Send Request! </button>
+    <div id="ips" hidden="hidden"> {{ ips }}</div>
+    <button class="btn btn-info btn-sm" onclick="javascript:comparar()">Send Request! </button>
 
 
 

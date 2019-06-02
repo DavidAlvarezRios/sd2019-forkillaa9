@@ -26,10 +26,13 @@ from forkilla import views
 
 router = routers.DefaultRouter()
 router.register(r'restaurants', views.RestaurantViewSet, basename='restaurants')
+listOfAddresses = ["sd2019-f4-forkilla"]
+
+
 
 urlpatterns = [
     url(r'^forkilla/', include('forkilla.urls')),
-    url(r'^comparator/$', views.comparator, name="comparator"),
+    url(r'^comparator/$', views.comparator, {'ips': listOfAddresses}),
     url(r'^admin/', admin.site.urls),
     url(r'', include('forkilla.urls')),
     url(r'^accounts/login/$', login, name='login'),
