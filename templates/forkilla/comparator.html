@@ -8,10 +8,10 @@
         <script src="{% static 'comparator/Comparator.js' %}"></script>
     </head>
     <h2>Comparator</h2>
-    <div style="margin: 10px;">
+    <div class="comparator_input">
         City: <input type="text" id="city">
     </div>
-    <div style="margin: 10px;">
+    <div class="comparator_input">
         Category:
         <select class="select" id="category">
               <option value="">Others</option>
@@ -35,11 +35,11 @@
               <option value="Grek">Greek</option>
             </select>
     </div>
-    <div style="margin: 10px;">
+    <div class="comparator_input">
         Maximum price: <input type="text" id="price">
     </div>
 
     <div id="ips" hidden="hidden"> {{ ips }}</div>
 
-    <button style="margin: 10px;" onclick="javascript:comparar()">GET ALL</button>
+    <button class="comparator_input" onclick="javascript:comparar()">Send Request</button>
 {% endblock %}

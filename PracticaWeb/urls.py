@@ -26,6 +26,7 @@ from forkilla import views
 
 router = routers.DefaultRouter()
 router.register(r'restaurants', views.RestaurantViewSet, basename='restaurants')
+# Llista d'adreces amb les quals farem el comparator
 listOfAddresses = ["sd2019-f4-forkilla", "sd2019-forkilla-a2"]
 
 
