@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caee2350-15aa-46fa-8662-30677032797a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/forkilla/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forkilla/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/forkilla/comparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/comparator.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/forkilla/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+            <state relative-caret-position="486">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -48,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/forkilla/comparator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="45" column="82" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="82" />
+            <state relative-caret-position="90">
+              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
                 <element signature="e#290#311#0#HTML" expanded="true" />
                 <element signature="e#377#398#0#HTML" expanded="true" />
@@ -130,11 +131,11 @@
         <option value="$PROJECT_DIR$/templates/forkilla/restaurants.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/checkout.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/details.html" />
-        <option value="$PROJECT_DIR$/forkilla/views.py" />
         <option value="$PROJECT_DIR$/PracticaWeb/urls.py" />
         <option value="$PROJECT_DIR$/static/comparator/Comparator.js" />
         <option value="$PROJECT_DIR$/PracticaWeb/settings.py" />
         <option value="$PROJECT_DIR$/templates/forkilla/comparator.html" />
+        <option value="$PROJECT_DIR$/forkilla/views.py" />
       </list>
     </option>
   </component>
@@ -270,7 +271,7 @@
       <workItem from="1559125685236" duration="954000" />
       <workItem from="1559135669423" duration="5583000" />
       <workItem from="1559150213503" duration="2034000" />
-      <workItem from="1559470785344" duration="11791000" />
+      <workItem from="1559470785344" duration="12016000" />
     </task>
     <task id="LOCAL-00001" summary="funciona en local">
       <created>1559075262473</created>
@@ -290,7 +291,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63525000" />
+    <option name="totallyTimeSpent" value="63750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
@@ -470,13 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forkilla/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PracticaWeb/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -496,14 +490,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/comparator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="45" column="82" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="82" />
+        <state relative-caret-position="90">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
             <element signature="e#290#311#0#HTML" expanded="true" />
             <element signature="e#377#398#0#HTML" expanded="true" />
             <element signature="e#1493#1514#0#HTML" expanded="true" />
             <element signature="e#1646#1667#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forkilla/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>

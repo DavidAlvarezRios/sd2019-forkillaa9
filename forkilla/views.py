@@ -67,10 +67,13 @@ def handler500(request):
 
 
 def comparator(request, ips):
-    context = {
-        'ips': ips
-    }
-    return render(request, 'forkilla/comparator.html', context)
+    try:
+        context = {
+            'ips': ips
+        }
+        return render(request, 'forkilla/comparator.html', context)
+    except Exception as ex:
+        return HttpResponse(ex)
 
 
 def restaurants(request, city="", category=""):
