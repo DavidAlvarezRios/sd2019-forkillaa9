@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+{% extends 'forkilla/base.html' %}
+{% block content %}
 <head>
     {% load static %}
     <meta charset="UTF-8">
     <title>Comparator</title>
-        <script src="{% static 'comparator/jquery-3.4.1.min.js' %}"></script>
-        <script> src="{% static 'comparator/Comparator.js' %}"</script>
+    <script src="{% static 'comparator/jquery-3.4.1.min.js' %}"></script>
+    <script> src="{% static 'comparator/Comparator.js' %}"</script>
 </head>
 <body>
 
@@ -59,9 +61,10 @@
       <input type="text" class="form-control" id="inputPrice">
     <br>
     <div id="ips" hidden="hidden"> {{ ips }}</div>
-    <button class="btn btn-info btn-sm" onclick="javascript:comparar()">Send Request! </button>
+    <button onclick="javascript:comparar()">Send Request! </button>
 
 
 
 </body>
 </html>
+{% endblock %}

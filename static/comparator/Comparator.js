@@ -63,22 +63,22 @@ function comparator(a, b) {
    return 0;
  }
 
- function comparar(){
-	var ips = $('#ips').text();
+function comparar(){
+    var ips = $('#ips').text();
 
-	ips = ips.slice(2, ips.length);
-	ips = ips.slice(ips, -1);
+    ips = ips.slice(2, ips.length);
+    ips = ips.slice(ips, -1);
 
-	ips = ips.replace(/'/g, '');
+    ips = ips.replace(/'/g, '');
 
-	ips = ips.split(',');
+    ips = ips.split(',');
 
-	while($('#Results').length>0){
-		$('#Results').remove();
-	}
+    while($('#Results').length>0){
+        $('#Results').remove();
+    }
 
-	ips.forEach(function (arrayItem) {
-		arrayItem = arrayItem.replace(' ', '');
-		search(arrayItem);
-	});
+    ips.forEach(function (arrayItem) {
+        arrayItem = arrayItem.replace(' ', '');
+        search(arrayItem);
+    });
 }
