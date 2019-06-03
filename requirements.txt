@@ -1,4 +1,5 @@
 Django==1.11.17
+django-bootstrap4==0.0.8
 django-cors-headers==3.0.1
 django-filter==2.1.0
 djangorestframework==3.9.4
