@@ -55,7 +55,8 @@ class RestaurantViewSet(viewsets.ModelViewSet):
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the forkilla home.")
+    return render(request, 'forkilla/welcome')
+    #return HttpResponse("Hello, world. You're at the forkilla home.")
 
 
 def handler404(request):
