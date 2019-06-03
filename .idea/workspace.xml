@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caee2350-15aa-46fa-8662-30677032797a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/forkilla/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +39,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forkilla/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -69,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/forkilla/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="79" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
+            <state relative-caret-position="378">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -81,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/cover.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="444">
+              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -130,7 +139,6 @@
         <option value="$PROJECT_DIR$/templates/forkilla/restaurants.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/checkout.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/details.html" />
-        <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/templates/forkilla/comparator.html" />
         <option value="$PROJECT_DIR$/static/comparator/Comparator.js" />
         <option value="$PROJECT_DIR$/PracticaWeb/urls.py" />
@@ -140,6 +148,7 @@
         <option value="$PROJECT_DIR$/PracticaWeb/settings.py" />
         <option value="$PROJECT_DIR$/static/cover.css" />
         <option value="$PROJECT_DIR$/templates/forkilla/welcome.html" />
+        <option value="$PROJECT_DIR$/static/style.css" />
       </list>
     </option>
   </component>
@@ -277,7 +286,7 @@
       <workItem from="1559135669423" duration="5583000" />
       <workItem from="1559150213503" duration="2034000" />
       <workItem from="1559470785344" duration="14267000" />
-      <workItem from="1559573950552" duration="8077000" />
+      <workItem from="1559573950552" duration="8926000" />
     </task>
     <task id="LOCAL-00001" summary="funciona en local">
       <created>1559075262473</created>
@@ -297,13 +306,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74078000" />
+    <option name="totallyTimeSpent" value="74927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -317,7 +326,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32996634" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005365" side_tool="true" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2312009" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2312009" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32996634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -454,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/comparator.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
@@ -502,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/cover.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -528,8 +523,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="79" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
+        <state relative-caret-position="378">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/cover.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>

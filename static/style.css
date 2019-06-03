@@ -1,3 +1,7 @@
+body{
+    background-color: #333333;
+}
+
 ul li a:link {
     color: hotpink;
 }
@@ -15,7 +19,15 @@ a:visited {
 }
 
 h2 {
-    color: blue;
+    color: white;
+}
+
+text {
+    color: white;
+}
+
+p {
+    color: white;
 }
 
 .page-header {
