@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caee2350-15aa-46fa-8662-30677032797a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forkilla/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forkilla/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/forkilla/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="288" column="53" selection-start-line="288" selection-start-column="53" selection-end-line="288" selection-end-column="53" />
+            <state relative-caret-position="372">
+              <caret line="296" column="30" selection-start-line="296" selection-start-column="30" selection-end-line="296" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -101,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/registration/register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+              <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -170,7 +170,6 @@
         <option value="$PROJECT_DIR$/templates/forkilla/restaurants.html" />
         <option value="$PROJECT_DIR$/forkilla/urls.py" />
         <option value="$PROJECT_DIR$/templates/forkilla/checkout.html" />
-        <option value="$PROJECT_DIR$/forkilla/views.py" />
         <option value="$PROJECT_DIR$/templates/forkilla/base.html" />
         <option value="$PROJECT_DIR$/static/bootstrap.css" />
         <option value="$PROJECT_DIR$/static/style.css" />
@@ -181,6 +180,7 @@
         <option value="$PROJECT_DIR$/static/login.css" />
         <option value="$PROJECT_DIR$/static/register.css" />
         <option value="$PROJECT_DIR$/templates/registration/register.html" />
+        <option value="$PROJECT_DIR$/forkilla/views.py" />
       </list>
     </option>
   </component>
@@ -319,7 +319,7 @@
       <workItem from="1559150213503" duration="2034000" />
       <workItem from="1559470785344" duration="14267000" />
       <workItem from="1559573950552" duration="9594000" />
-      <workItem from="1559641751833" duration="24505000" />
+      <workItem from="1559641751833" duration="25360000" />
     </task>
     <task id="LOCAL-00001" summary="funciona en local">
       <created>1559075262473</created>
@@ -339,7 +339,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100100000" />
+    <option name="totallyTimeSpent" value="100955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
@@ -587,26 +587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forkilla/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="288" column="53" selection-start-line="288" selection-start-column="53" selection-end-line="288" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forkilla/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,7 +615,23 @@
     <entry file="file://$PROJECT_DIR$/templates/registration/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forkilla/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forkilla/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="296" column="30" selection-start-line="296" selection-start-column="30" selection-end-line="296" selection-end-column="30" />
         </state>
       </provider>
     </entry>
