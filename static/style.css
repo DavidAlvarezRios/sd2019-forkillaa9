@@ -38,14 +38,17 @@ table.center {
     background-color: transparent;
     margin-right: auto;
     margin-left: auto;
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 table.center tbody {
     background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 table.center tbody tr {
     background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 table.center tbody tr th {
@@ -53,10 +56,12 @@ table.center tbody tr th {
     border-color: rgba(255, 255, 255, 0.5);
     display: table-cell;
     padding: 10px 7px;
+    color: white;
 }
 
 table.center tbody tr td {
     background-color: transparent;
+    color: #d8b511
 }
 
 .page-header {
