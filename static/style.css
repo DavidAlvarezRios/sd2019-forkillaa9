@@ -34,26 +34,28 @@ p {
     color: white;
 }
 
-table {
+table.center {
+    background-color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table.center tbody {
     background-color: transparent;
 }
 
-table tbody {
+table.center tbody tr {
     background-color: transparent;
 }
 
-table tbody tr {
-    background-color: transparent;
-}
-
-table tbody tr th {
+table.center tbody tr th {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.5);
     display: table-cell;
     padding: 10px 7px;
 }
 
-table tbody tr td {
+table.center tbody tr td {
     background-color: transparent;
 }
 
