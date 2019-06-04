@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caee2350-15aa-46fa-8662-30677032797a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/forkilla/restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/restaurants.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +31,12 @@
         <entry file="file://$PROJECT_DIR$/templates/forkilla/restaurants.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+              <caret line="36" column="129" selection-start-line="36" selection-start-column="129" selection-end-line="36" selection-end-column="129" />
               <folding>
                 <element signature="e#947#971#0#HTML" expanded="true" />
                 <element signature="e#1140#1182#0#HTML" expanded="true" />
                 <element signature="e#1215#1243#0#HTML" expanded="true" />
+                <element signature="e#1455#1504#0#HTML" expanded="true" />
                 <element signature="e#1593#1618#0#HTML" expanded="true" />
                 <element signature="e#1736#1759#0#HTML" expanded="true" />
               </folding>
@@ -302,7 +302,7 @@
       <workItem from="1559150213503" duration="2034000" />
       <workItem from="1559470785344" duration="14267000" />
       <workItem from="1559573950552" duration="9594000" />
-      <workItem from="1559641751833" duration="5430000" />
+      <workItem from="1559641751833" duration="5969000" />
     </task>
     <task id="LOCAL-00001" summary="funciona en local">
       <created>1559075262473</created>
@@ -322,7 +322,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81025000" />
+    <option name="totallyTimeSpent" value="81564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
@@ -554,11 +554,12 @@
     <entry file="file://$PROJECT_DIR$/templates/forkilla/restaurants.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+          <caret line="36" column="129" selection-start-line="36" selection-start-column="129" selection-end-line="36" selection-end-column="129" />
           <folding>
             <element signature="e#947#971#0#HTML" expanded="true" />
             <element signature="e#1140#1182#0#HTML" expanded="true" />
             <element signature="e#1215#1243#0#HTML" expanded="true" />
+            <element signature="e#1455#1504#0#HTML" expanded="true" />
             <element signature="e#1593#1618#0#HTML" expanded="true" />
             <element signature="e#1736#1759#0#HTML" expanded="true" />
           </folding>

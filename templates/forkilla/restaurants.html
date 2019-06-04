@@ -34,7 +34,7 @@
                         <div class="card-header" style="background: #555555;">
                             <h3><a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> </h3>
 
-                            <button type="submit" class="btn btn-primary btn-sm" style="position:center; float:right; color:white" name="reservation" value={{restaurant.restaurant_number}}> Reserva</button>
+                            <button type="submit" class="btn btn-primary btn-sm" style="position:center; color:white; border:none" name="reservation" value={{restaurant.restaurant_number}}> Reserva</button>
                         </div>
                         <div class="card-body" style="background: #555555;">
                             <p class="text-info" style="color: #d8b511;">{{restaurant.menu_description}}</p>
