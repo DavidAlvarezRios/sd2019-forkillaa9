@@ -15,20 +15,58 @@
     <body>
         <div class="details">
             {% if restaurant %}
-                <ul class="breadcrumb">
+                <ul class="breadcrumb" style="color:transparent">
                     <li><a href="/forkilla/restaurants/">Home</a></li>
                     <li><a href="/forkilla/restaurants/{{ restaurant.city }}">{{ restaurant.city }}</a></li>
                     <li><a href="/forkilla/restaurants/{{ restaurant.city }}/{{ restaurant.category }}">{{ restaurant.category }}</a></li>
-                    <li>{{ restaurant.name }}</li>
+                    <li style="color: #d8b511">{{ restaurant.name }}</li>
                 </ul>
-                <h3>Name:</h3>  {{ restaurant.name }}
-                <h3>Restaurant number:</h3> {{restaurant.restaurant_number}}
-                <h3>Menu description:</h3> {{restaurant.menu_description}}
-                <h3>Price average</h3> {{restaurant.price_average}}
-                <h3>City</h3> {{restaurant.city}}
-                <h3>Address</h3> {{restaurant.address}}
-                <h3>Country</h3> {{restaurant.country}}
-                <h3>Score</h3> {{ restaurant.rate }}
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Name</th>
+                                <td>{{ restaurant.name }}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Restaurant Number</th>
+                                <td>{{ restaurant.restaurant_number }}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Menu Description</th>
+                                <td>{{ restaurant.menu_description }}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Price Average</th>
+                                <td>{{ restaurant.price_average }}</td>
+                            </tr>
+
+                            <tr>
+                                <th>City</th>
+                                <td>{{ restaurant.city }}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Address</th>
+                                <td>{{ restaurant.address }}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Country</th>
+                                <td>{{ restaurant.country }}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Score</th>
+                                <td>{{ restaurant.rate }}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             {% endif %}
             <br>
             {% if user.is_authenticated %}

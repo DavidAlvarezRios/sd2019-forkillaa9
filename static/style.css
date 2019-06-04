@@ -34,6 +34,29 @@ p {
     color: white;
 }
 
+table {
+    background-color: transparent;
+}
+
+table tbody {
+    background-color: transparent;
+}
+
+table tbody tr {
+    background-color: transparent;
+}
+
+table tbody tr th {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
+    display: table-cell;
+    padding: 10px 7px;
+}
+
+table tbody tr td {
+    background-color: transparent;
+}
+
 .page-header {
     padding: 20px 20px 20px 40px;
 }
