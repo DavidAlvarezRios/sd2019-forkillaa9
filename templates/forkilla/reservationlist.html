@@ -9,35 +9,51 @@
     <body>
 
         {% if reserved_restaurants %}
-
+            <div class="container" style="max-width:1100px">
             {% if future %}
+
                   {% for reservation in future %}
-                      <h3>{{ reservation.restaurant.name }}</h3><p>: {{ reservation.day}} </p>
-                      <form action="{% url 'delete_view' pk=reservation.id %}" method="POST">
-                          {% csrf_token %}
-                          <button type="submit" value="Delete">Delete</button>
-                      </form>
+                      <div class="card w50 mx-auto" style="background: #555555;">
+                        <div class="card-header" style="background: #555555;">
+                              <h3>{{ reservation.restaurant.name }}</h3><p>: {{ reservation.day}} </p>
+                        </div>
+                        <div class="card-body" style="background: #555555;">
+                              <form action="{% url 'delete_view' pk=reservation.id %}" method="POST">
+                                  {% csrf_token %}
+                                  <button type="submit" class="btn btn-primary btn-sm" style="position:center; color:white; border:none" value="Delete">Cancelar Reserva</button>
+                              </form>
+                        </div>
+
+                      </div>
                     <br>
                 {% endfor %}
             {% endif %}
 
             {% if past %}
                 {% for reservation, reviewed in past %}
-                    <h3>{{ reservation.restaurant.name }}</h3><p>: {{ reservation.day }} </p>
+                    <div class="card w50 mx-auto" style="background: #555555;">
+                        <div class="card-header" style="background: #555555;">
+                        <h3>{{ reservation.restaurant.name }}</h3><p>: {{ reservation.day }} </p>
+                        </div>
                     {% if reviewed %}
+                        <div class="card-body" style="background: #555555;">
                         <form action="{% url 'delete_view' pk=reservation.id %}" method="POST">
                           {% csrf_token %}
-                          <button type="submit" value="Delete">Delete</button>
+                          <button type="submit" class="btn btn-primary btn-sm" style="position:center; color:white; border:none" value="Delete">Delete</button>
                       </form>
+                        </div>
                     {% else %}
+                        <div class="card-body" style="background: #555555;">
                         <form action="{% url 'details' reservation.restaurant.restaurant_number %}" method="get">
-                            <button>Review</button>
+                            <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Review</button>
                         </form>
+                        </div>
                     {% endif %}
+                    </div>
                     <br>
                 {% endfor %}
             {% endif %}
-
+            </div>
         {% endif %}
 
     </body>
