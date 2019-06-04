@@ -94,9 +94,9 @@
                     <div class="review">
                         <p>Usuari: {{ comment.user }} </p>
                         <p>Puntuacio: {{ comment.stars }}</p>
-                        <p class="text-info" style="color: #d8b511;">{{restaurant.menu_description}}</p>
+                        <p class="text-info" style="color: #d8b511;">{{comment.review_message}}</p>
                     </div>
-                    <br><br>
+                    <br>
                 {% endfor %}
             {% else %}
                 <h3>No hi ha reviews disponibles pel restaurant {{ restaurant.name }}</h3>

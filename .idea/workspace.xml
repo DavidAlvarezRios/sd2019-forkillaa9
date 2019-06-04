@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/forkilla/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+            <state relative-caret-position="444">
+              <caret line="98" column="24" lean-forward="true" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -264,7 +264,7 @@
       <workItem from="1559150213503" duration="2034000" />
       <workItem from="1559470785344" duration="14267000" />
       <workItem from="1559573950552" duration="9594000" />
-      <workItem from="1559641751833" duration="16542000" />
+      <workItem from="1559641751833" duration="16715000" />
     </task>
     <task id="LOCAL-00001" summary="funciona en local">
       <created>1559075262473</created>
@@ -284,7 +284,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92137000" />
+    <option name="totallyTimeSpent" value="92310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
@@ -537,8 +537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+        <state relative-caret-position="444">
+          <caret line="98" column="24" lean-forward="true" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
