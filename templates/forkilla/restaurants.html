@@ -30,7 +30,7 @@
             <div class="container" style="max-width:1100px"></div>
              <form action="{% url 'reservation'%}" method="get">
                  {% for restaurant in restaurants %}
-                     <div class="card" style="background: #555555;">
+                     <div class="card w50 mx-auto" style="background: #555555;">
                         <div class="card-header" style="background: #555555;">
                             <h3><a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> </h3>
 
@@ -39,6 +39,7 @@
                         <div class="card-body" style="background: #555555;">
                             <p class="text-info">{{restaurant.menu_description}}</p>
                         </div>
+                     </div>
                      </div>
                     <br>
                 {% endfor %}
