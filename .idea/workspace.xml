@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caee2350-15aa-46fa-8662-30677032797a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" selection-start-line="19" selection-end-line="36" selection-end-column="10" />
+            <state relative-caret-position="126">
+              <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="87" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -95,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/registration/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
+            <state relative-caret-position="180">
+              <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -177,11 +178,11 @@
         <option value="$PROJECT_DIR$/templates/forkilla/details.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/reservationlist.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/comparator.html" />
-        <option value="$PROJECT_DIR$/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/static/login.css" />
         <option value="$PROJECT_DIR$/forkilla/views.py" />
         <option value="$PROJECT_DIR$/static/register.css" />
         <option value="$PROJECT_DIR$/static/style.css" />
+        <option value="$PROJECT_DIR$/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/templates/registration/register.html" />
       </list>
     </option>
@@ -321,7 +322,7 @@
       <workItem from="1559150213503" duration="2034000" />
       <workItem from="1559470785344" duration="14267000" />
       <workItem from="1559573950552" duration="9594000" />
-      <workItem from="1559641751833" duration="28574000" />
+      <workItem from="1559641751833" duration="28721000" />
     </task>
     <task id="LOCAL-00001" summary="funciona en local">
       <created>1559075262473</created>
@@ -341,7 +342,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104169000" />
+    <option name="totallyTimeSpent" value="104316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
@@ -570,18 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forkilla/comparator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="57" lean-forward="true" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          <folding>
-            <element signature="e#314#339#0#HTML" expanded="true" />
-            <element signature="e#418#438#0#HTML" expanded="true" />
-            <element signature="e#1523#1545#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forkilla/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -599,11 +588,14 @@
     <entry file="file://$PROJECT_DIR$/static/register.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/forkilla/forms.py">
+    <entry file="file://$PROJECT_DIR$/templates/forkilla/comparator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="666">
+          <caret line="37" column="57" lean-forward="true" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#314#339#0#HTML" expanded="true" />
+            <element signature="e#418#438#0#HTML" expanded="true" />
+            <element signature="e#1523#1545#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -617,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" selection-start-line="19" selection-end-line="36" selection-end-column="10" />
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="87" />
           <folding>
             <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -626,10 +618,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/forkilla/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/registration/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
+        <state relative-caret-position="180">
+          <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
