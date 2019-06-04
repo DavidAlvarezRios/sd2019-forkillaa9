@@ -3,6 +3,8 @@ body{
 }
 .centered-form{
 	margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .centered-form .panel{
