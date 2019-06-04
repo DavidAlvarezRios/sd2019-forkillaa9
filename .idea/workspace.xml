@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caee2350-15aa-46fa-8662-30677032797a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/forkilla/reservationlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/reservationlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/forkilla/comparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/comparator.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +27,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/forkilla/reservationlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="47" column="116" selection-start-line="47" selection-start-column="116" selection-end-line="47" selection-end-column="116" />
+            <state relative-caret-position="738">
+              <caret line="41" column="86" lean-forward="true" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/forkilla/comparator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+              <folding>
+                <element signature="e#314#339#0#HTML" expanded="true" />
+                <element signature="e#418#438#0#HTML" expanded="true" />
+                <element signature="e#1523#1545#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,13 +71,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/forkilla/restaurants.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="76" />
+            <state relative-caret-position="720">
+              <caret line="40" column="70" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="70" />
               <folding>
                 <element signature="e#968#992#0#HTML" expanded="true" />
                 <element signature="e#1163#1191#0#HTML" expanded="true" />
                 <element signature="e#1680#1708#0#HTML" expanded="true" />
-                <element signature="e#1759#1782#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/forkilla/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +127,6 @@
         <option value="$PROJECT_DIR$/forkilla/staticfiles/style.css" />
         <option value="$PROJECT_DIR$/forkilla/models.py" />
         <option value="$PROJECT_DIR$/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/templates/forkilla/comparator.html" />
         <option value="$PROJECT_DIR$/static/comparator/Comparator.js" />
         <option value="$PROJECT_DIR$/PracticaWeb/urls.py" />
         <option value="$PROJECT_DIR$/templates/forkilla/500.html" />
@@ -118,6 +143,7 @@
         <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/templates/forkilla/details.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/reservationlist.html" />
+        <option value="$PROJECT_DIR$/templates/forkilla/comparator.html" />
       </list>
     </option>
   </component>
@@ -256,7 +282,7 @@
       <workItem from="1559150213503" duration="2034000" />
       <workItem from="1559470785344" duration="14267000" />
       <workItem from="1559573950552" duration="9594000" />
-      <workItem from="1559641751833" duration="17808000" />
+      <workItem from="1559641751833" duration="18555000" />
     </task>
     <task id="LOCAL-00001" summary="funciona en local">
       <created>1559075262473</created>
@@ -276,7 +302,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93403000" />
+    <option name="totallyTimeSpent" value="94150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
@@ -433,13 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forkilla/comparator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="43" column="65" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
@@ -504,13 +523,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forkilla/restaurants.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="70" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="70" />
+          <folding>
+            <element signature="e#968#992#0#HTML" expanded="true" />
+            <element signature="e#1163#1191#0#HTML" expanded="true" />
+            <element signature="e#1680#1708#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        <state relative-caret-position="524">
+          <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -522,30 +552,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forkilla/restaurants.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="76" />
-          <folding>
-            <element signature="e#968#992#0#HTML" expanded="true" />
-            <element signature="e#1163#1191#0#HTML" expanded="true" />
-            <element signature="e#1680#1708#0#HTML" expanded="true" />
-            <element signature="e#1759#1782#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/reservationlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="47" column="116" selection-start-line="47" selection-start-column="116" selection-end-line="47" selection-end-column="116" />
+        <state relative-caret-position="738">
+          <caret line="41" column="86" lean-forward="true" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forkilla/comparator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+          <folding>
+            <element signature="e#314#339#0#HTML" expanded="true" />
+            <element signature="e#418#438#0#HTML" expanded="true" />
+            <element signature="e#1523#1545#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
