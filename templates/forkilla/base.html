@@ -3,6 +3,7 @@
 {% load static %}
 <head>
     <meta charset="UTF-8">
+    <link href="{% static 'bootstrap.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}" />
     <title>Title</title>
 </head>
@@ -22,17 +23,17 @@
         {% if user.is_authenticated %}
                 <h3>Hola</h3> <p>{{ user.get_username }} </p>
                 <form action="{% url 'logout' %}" method="get">
-                    <button>Logout</button>
+                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Logout</button>
                 </form>
                 <form action="{% url 'reservationlist' user.username %}" method="get">
-                    <button>Reserves</button>
+                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Reserves</button>
                 </form>
         {% else %}
                 <form action="{% url 'login' %}" method="get">
-                    <button>Login</button>
+                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Login</button>
                 </form>
                 <form action="{% url 'register' %}" method="get">
-                    <button>Register</button>
+                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Register</button>
                 </form>
 
         {% endif %}
@@ -46,7 +47,7 @@
 
         {% for restaurant in viewedrestaurants.restaurant.all|slice:":5:-1"%}
             <a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> : {{restaurant.menu_description}}
-            <button type="submit" name="reservation" value={{restaurant.restaurant_number}}> Reserva</button>
+            <button type="submit" class="btn btn-primary btn-sm" style="position:center; color:white; border:none" value={{restaurant.restaurant_number}}> Reserva</button>
         {% endfor %}
     </form>
 <div>
