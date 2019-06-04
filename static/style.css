@@ -143,3 +143,10 @@ table.center tbody tr td {
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
 
+#panel1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+}
+
