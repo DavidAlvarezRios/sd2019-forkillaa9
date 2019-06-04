@@ -27,7 +27,7 @@
             {% if promoted %}
                 <h2>Promoted Restaurants</h2>
             {% endif %}
-            <div class="container" style="max-width:1100px"></div>
+            <div class="container" style="max-width:1100px">
              <form action="{% url 'reservation'%}" method="get">
                  {% for restaurant in restaurants %}
                      <div class="card w50 mx-auto" style="background: #555555;">
@@ -40,10 +40,10 @@
                             <p class="text-info">{{restaurant.menu_description}}</p>
                         </div>
                      </div>
-                     </div>
                     <br>
                 {% endfor %}
             </form>
+            </div>
         </div>
 
         {% else %}
