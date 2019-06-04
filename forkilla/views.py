@@ -55,11 +55,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
 
 
 def index(request):
-    try:
-        return render(request, 'forkilla/welcome.html')
-    except Exception as ex:
-        return HttpResponse(ex)
-    #return HttpResponse("Hello, world. You're at the forkilla home.")
+    return render(request, 'forkilla/welcome.html')
 
 
 def handler404(request):
@@ -71,44 +67,38 @@ def handler500(request):
 
 
 def comparator(request, ips):
-    try:
-        context = {
-            'ips': ips
-        }
-        return render(request, 'forkilla/comparator.html', context)
-    except Exception as ex:
-        return HttpResponse(ex)
+    context = {
+        'ips': ips
+    }
+    return render(request, 'forkilla/comparator.html', context)
 
 
 def restaurants(request, city="", category=""):
-    try:
-        promoted = False
+    promoted = False
 
-        if city and category:
-            restaurants_by_city = Restaurant.objects.filter(city__iexact=city, category__iexact=category)
-        elif city:
-            restaurants_by_city = Restaurant.objects.filter(city__iexact=city)
+    if city and category:
+        restaurants_by_city = Restaurant.objects.filter(city__iexact=city, category__iexact=category)
+    elif city:
+        restaurants_by_city = Restaurant.objects.filter(city__iexact=city)
 
-        else:
+    else:
 
-            restaurants_by_city = Restaurant.objects.filter(is_promot="True")
-            promoted = True
-        if request.GET:
-            restaurants_by_city = Restaurant.objects.filter(city__iexact=request.GET['searching'])
+        restaurants_by_city = Restaurant.objects.filter(is_promot="True")
+        promoted = True
+    if request.GET:
+        restaurants_by_city = Restaurant.objects.filter(city__iexact=request.GET['searching'])
 
-        viewedrestaurants = _check_session(request)
+    viewedrestaurants = _check_session(request)
 
-        context = {
-            'city': city,
-            'category': category,
-            'restaurants': restaurants_by_city,
-            'promoted': promoted,
-            'user': request.user,
-            'viewedrestaurants': viewedrestaurants
-        }
-        return render(request, 'forkilla/restaurants.html', context)
-    except Exception as ex:
-        return HttpResponse(ex)
+    context = {
+        'city': city,
+        'category': category,
+        'restaurants': restaurants_by_city,
+        'promoted': promoted,
+        'user': request.user,
+        'viewedrestaurants': viewedrestaurants
+    }
+    return render(request, 'forkilla/restaurants.html', context)
 
 
 def details_view(request, restaurant_number=""):
@@ -176,8 +166,7 @@ def reservation(request):
                 for r in reservations:
                     total_people += r.num_people
 
-                if (
-                        total_people + resv.num_people) <= resv.restaurant.capacity:  # We compare it with the total capacity of the restaurant
+                if (total_people + resv.num_people) <= resv.restaurant.capacity:  # We compare it with the total capacity of the restaurant
                     # If there is space we update the values
                     resv.save()
                     request.session["reservation"] = resv.id
