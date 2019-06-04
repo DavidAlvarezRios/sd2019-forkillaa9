@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-{% extends 'forkilla/base.html' %}
 {% load static %}
 
 <head>
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="{% static 'register.css' %}" />
 </head>
 
-{% block content %}
 <body>
 
 <div class="container">
@@ -23,7 +21,7 @@
 			    		<h3 class="panel-title">Please sign up for Forkilla <small>It's free!</small></h3>
 			 			</div>
 			 			<div class="panel-body">
-			    		<form role="form" action="" method="post">
+			    		<form action="" method="post">
                             {% csrf_token %}
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
@@ -56,5 +54,4 @@
     </div>
 
 </body>
-{% endblock %}
 </html>
