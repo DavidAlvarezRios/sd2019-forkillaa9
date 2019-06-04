@@ -87,3 +87,10 @@ p {
     margin: 10px;
 }
 
+.btn {
+    background-color: black;
+}
+
+.card .card-body .card-header{
+    background-color: transparent;
+}

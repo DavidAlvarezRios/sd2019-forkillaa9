@@ -27,13 +27,14 @@
             {% if promoted %}
                 <h2>Promoted Restaurants</h2>
             {% endif %}
+            <div class="container" style="max-width:1100px"></div>
              <form action="{% url 'reservation'%}" method="get">
                  {% for restaurant in restaurants %}
                      <div class="card">
                         <div class="card-header">
                             <h3><a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> </h3>
 
-                        <button type="submit" class="btn btn-primary btn-sm" style="position:relative; float:right" name="reservation" value={{restaurant.restaurant_number}}> Reserva</button>
+                        <button type="submit" class="btn btn-primary btn-sm" style="position:relative; float:right; color:white" name="reservation" value={{restaurant.restaurant_number}}> Reserva</button>
                         </div>
                         <div class="card-body">
                             <p class="text-info">{{restaurant.menu_description}}</p>
@@ -42,6 +43,7 @@
                     <br>
                 {% endfor %}
             </form>
+        </div>
 
         {% else %}
             <p>No restaurants are available.</p>
