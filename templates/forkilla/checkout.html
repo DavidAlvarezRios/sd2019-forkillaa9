@@ -4,17 +4,23 @@
 {% block content%}
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Checkout</title>
 </head>
 <body>
-    <ul class="breadcrumb">
+    <ul class="breadcrumb" style="background-color: transparent;">
         <li><a href="/forkilla/restaurants/">Home</a></li>
     </ul>
-    {% if resultat %}
-        <h3>RESERVA REALITZADA AMB ÈXIT </h3>
-    {% else %}
-        <h3>ERROR EN LA RESERVA</h3>
-    {% endif %}
+    <div class="jumbotron text-xs-center">
+        {% if resultat %}
+            <h1 class="display-3">Reserva realitzada amb éxit!"</h1>
+        {% else %}
+            <h3><h1 class="display-3">Oooops! Alguna cosa no ha sortit bé!</h1></h3>
+        {% endif %}
+          <p class="lead">
+            <a class="btn btn-primary btn-sm" role="button">Continue to homepage</a>
+        </p>
+    </div>
+
 </body>
 </html>
 {% endblock %}
