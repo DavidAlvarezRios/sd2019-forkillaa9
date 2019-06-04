@@ -26,14 +26,14 @@
                     <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Logout</button>
                 </form>
                 <form action="{% url 'reservationlist' user.username %}" method="get">
-                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Reserves</button>
+                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none; background-color:#111111">Reserves</button>
                 </form>
         {% else %}
                 <form action="{% url 'login' %}" method="get">
-                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Login</button>
+                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none; background-color:#111111">Login</button>
                 </form>
                 <form action="{% url 'register' %}" method="get">
-                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Register</button>
+                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none; background-color:#111111">Register</button>
                 </form>
 
         {% endif %}
@@ -47,7 +47,7 @@
 
         {% for restaurant in viewedrestaurants.restaurant.all|slice:":5:-1"%}
             <a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> : {{restaurant.menu_description}}
-            <button type="submit" class="btn btn-primary btn-sm" style="position:center; color:white; border:none" value={{restaurant.restaurant_number}}> Reserva</button>
+            <button type="submit" class="btn btn-primary btn-sm" style="position:center; color:white; border:none; background-color:#111111" value={{restaurant.restaurant_number}}> Reserva</button>
         {% endfor %}
     </form>
 <div>
