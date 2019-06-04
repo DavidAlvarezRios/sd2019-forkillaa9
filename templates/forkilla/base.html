@@ -46,7 +46,7 @@
         {% csrf_token %}
 
         {% for restaurant in viewedrestaurants.restaurant.all|slice:":5:-1"%}
-            <a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> : <p style="color:#d8b511">{restaurant.menu_description}}</p>{
+            <a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> : <p style="color:#d8b511">{{restaurant.menu_description}}</p>
             <button type="submit" class="btn btn-primary btn-sm" style="position:center; color:white; border:none; background-color:#111111" value={{restaurant.restaurant_number}}> Reserva</button>
         {% endfor %}
     </form>
