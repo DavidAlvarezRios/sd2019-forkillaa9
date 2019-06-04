@@ -30,13 +30,13 @@
             <div class="container" style="max-width:1100px"></div>
              <form action="{% url 'reservation'%}" method="get">
                  {% for restaurant in restaurants %}
-                     <div class="card" style="background: #333333;">
-                        <div class="card-header" style="background: #333333;">
+                     <div class="card" style="background: #999999;">
+                        <div class="card-header" style="background: #999999;">
                             <h3><a href="{% url 'details' restaurant.restaurant_number%}"> {{restaurant.name}} </a> </h3>
 
                         <button type="submit" class="btn btn-primary btn-sm" style="position:relative; float:right; color:white" name="reservation" value={{restaurant.restaurant_number}}> Reserva</button>
                         </div>
-                        <div class="card-body" style="background: #333333;">
+                        <div class="card-body" style="background: #999999;">
                             <p class="text-info">{{restaurant.menu_description}}</p>
                         </div>
                      </div>
