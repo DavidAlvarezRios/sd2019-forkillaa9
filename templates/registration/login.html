@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+{% extends 'forkilla/base.html' %}
 {% load static %}
+{% block content %}
 <head>
     <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'style.css' %}" />
     <title>Title</title>
 </head>
 <body>
 
-{% block content %}
-
-
   {% if form.errors %}
-    <p class="error">Sorry, that's not a valid username or password</p>
+    <p class="error">Sorry, that's not a valid username or password</p><br>
   {% endif %}
 
-  <form action="" method="post">
-    {% csrf_token %}
-    <label for="username">User name:</label>
-    <input type="text" name="username" value="" id="username">
-    <label for="password">Password:</label>
-    <input type="password" name="password" value="" id="password">
-    <input type="hidden" name="next" value="{{ next|escape }}" />
-    <input type="submit" value="login" />
-  </form>
+    <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <form action="" method="post">
+        {% csrf_token %}
+        <label for="username">User name:</label>
+        <input type="text" name="username" value="" id="username">
+        <label for="password">Password:</label>
+        <input type="password" name="password" value="" id="password">
+        <input type="hidden" name="next" value="{{ next|escape }}" />
+        <input type="submit" value="login" />
+      </form>
+
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+    </div>
+    </div>
 
 {% endblock %}
 
