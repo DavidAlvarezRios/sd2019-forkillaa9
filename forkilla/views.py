@@ -140,7 +140,9 @@ def details_view(request, restaurant_number=""):
 
 
 def checkout(request):
-    correcte = request.session["result"] == "OK"
+    correcte = False
+    if request.session["result"] == "OK":
+        correcte = True
     context = {
         'resultat': correcte
     }
@@ -176,7 +178,7 @@ def reservation(request):
 
             else:
                 request.session["result"] = form.errors
-            return HttpResponseRedirect(reverse('checkout'))
+            return HttpResponseRedirect('checkout')
 
         elif request.method == "GET":
             viewedrestaurants = _check_session(request)

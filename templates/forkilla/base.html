@@ -23,7 +23,7 @@
         {% if user.is_authenticated %}
                 <h3>Hola</h3> <p>{{ user.get_username }} </p>
                 <form action="{% url 'logout' %}" method="get">
-                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none">Logout</button>
+                    <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none; background-color:#111111">Logout</button>
                 </form>
                 <form action="{% url 'reservationlist' user.username %}" method="get">
                     <button class="btn btn-primary btn-sm" style="position:center; color:white; border:none; background-color:#111111">Reserves</button>
