@@ -143,8 +143,11 @@ def checkout(request):
     correcte = False
     if request.session["result"] == "OK":
         correcte = True
+
+    viewedrestaurants = _check_session(request)
     context = {
-        'resultat': correcte
+        'resultat': correcte,
+        'viewedrestaurants': viewedrestaurants
     }
 
     return render(request, 'forkilla/checkout.html', context)
