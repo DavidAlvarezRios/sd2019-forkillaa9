@@ -282,19 +282,18 @@ def reservationlist(request, username=""):
 
 
 def register(request):
-    try:
-        if request.method == 'POST':
-            form = UserCreationForm(request.POST)
-            if form.is_valid():
-                new_user = form.save()
-                return HttpResponseRedirect(reverse("index"))
-        else:
-            form = UserCreationForm()
-        return render(request, "registration/register.html", {
-            'form': form,
-        })
-    except Exception as ex:
-        return HttpResponse(ex)
+
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            new_user = form.save()
+            return HttpResponseRedirect(reverse("index"))
+    else:
+        form = UserCreationForm()
+    return render(request, "registration/register.html", {
+        'form': form,
+    })
+
 
 
 def login_user(request):
