@@ -2,37 +2,41 @@
 <html lang="en">
 {% extends 'forkilla/base.html' %}
 {% load static %}
-
+{% block content %}
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'login.css' %}" />
+    <title>Login</title>
 </head>
-{% block content %}
-<body style="color: #333333; text-align:center;">
-{% if form %}
+<body>
+
+  {% if form.errors %}
+    <p class="error">Sorry, that's not a valid username or password</p><br>
+  {% endif %}
+
     <div class="wrapper fadeInDown">
     <div id="formContent">
       <form action="" method="post">
         {% csrf_token %}
         <label for="username" style="color: #d8b511">User name:</label>
-        <input type="text" name="username" value="" id="username" placeholder="Username">
+        <input type="text" name="username" value="" id="username">
         <label for="password" style="color: #d8b511">Password:</label>
-        <input type="password" name="password1" value="" id="password1" placeholder="Password">
+        <input type="password" name="password1" value="" id="password1">
         <input type="hidden" name="next" value="{{ next|escape }}" />
-        <input type="submit" value="register" />
+        <input type="submit" value="login" />
       </form>
 
     <div id="formFooter">
-      <a class="underlineHover" href="/forkilla/restaurants">Back Home</a>
+      <a class="underlineHover" href="#">Forgot Password?</a>
     </div>
 
     </div>
     </div>
-{% endif %}
-</body>
+
 {% endblock %}
+
+</body>
 </html>
