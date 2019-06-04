@@ -132,3 +132,14 @@ table.center tbody tr td {
     color: #d8b511;
 }
 
+.centered-form{
+	margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
